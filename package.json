@@ -1,0 +1,27 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "A sleek and modern implementation of the classic Tic Tac Toe game using HTML, CSS, and JavaScript. Features a responsive design, smooth animations, and an intuitive user interface.",
+  "main": "script.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaipkapoor99/Tic-Tac-Toe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jaipkapoor99/Tic-Tac-Toe/issues"
+  },
+  "homepage": "https://github.com/jaipkapoor99/Tic-Tac-Toe#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  }
+}

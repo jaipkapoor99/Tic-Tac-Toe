@@ -1,6 +1,29 @@
 # Modern Tic Tac Toe Game
 
-A sleek and modern implementation of the classic Tic Tac Toe game using HTML, CSS, and JavaScript. Features a responsive design, smooth animations, and an intuitive user interface.
+A sleek and modern implementation of the classic Tic Tac Toe game using HTML, CSS, and JavaScript. Features a responsive design, smooth animations, and an intuitive user interface built with Tailwind CSS.
+
+## Quick Start
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/Tic-Tac-Toe.git
+   cd Tic-Tac-Toe
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run build
+   ```
+
+4. Open `index.html` in your browser
 
 ## Features
 
@@ -17,10 +40,37 @@ A sleek and modern implementation of the classic Tic Tac Toe game using HTML, CS
 ## Technologies Used
 
 - HTML5
-- CSS3 (with modern features like Grid, Flexbox, and CSS Variables)
+- Tailwind CSS 3.x
 - JavaScript (ES6+)
 - Google Fonts (Poppins, Quicksand)
+- PostCSS & Autoprefixer
+- Node.js & npm for development
 - GitHub Copilot for enhanced development
+
+## Development Setup
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Project Structure
+
+```
+tic-tac-toe/
+├── node_modules/       # Dependencies (gitignored)
+├── index.html         # Main HTML file
+├── input.css         # Tailwind CSS source file
+├── style.css         # Compiled CSS output
+├── script.js         # Game logic
+├── tailwind.config.js # Tailwind configuration
+├── postcss.config.js  # PostCSS configuration
+└── package.json      # Project metadata and scripts
+```
+
+### Available Scripts
+
+- `npm run build` - Starts Tailwind CSS compiler in watch mode
 
 ## Game Rules
 
@@ -54,11 +104,35 @@ A sleek and modern implementation of the classic Tic Tac Toe game using HTML, CS
 - State management
 - Win/Draw detection
 
-## How to Run
+## Local Development
 
 1. Clone the repository
-2. Open `index.html` in a modern web browser
-3. Start playing!
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start Tailwind CSS compiler:
+   ```bash
+   npm run build
+   ```
+4. Open `index.html` in your browser
+5. Make changes to `input.css` for styling
+6. The compiler will automatically rebuild when you make changes
+
+## Building for Production
+
+1. Install dependencies if you haven't already:
+   ```bash
+   npm install
+   ```
+2. Build the CSS:
+   ```bash
+   npx tailwindcss -i ./input.css -o ./style.css --minify
+   ```
+3. Your production files will be:
+   - `index.html`
+   - `style.css` (minified)
+   - `script.js`
 
 ## Future Enhancements
 

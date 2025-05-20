@@ -12,22 +12,65 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="light">
-    <div class="container">
-      <h1>Tic Tac Toe</h1>
-      <div id="board">
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
+  <body
+    class="min-h-screen bg-gradient-radial from-primary-light via-surface to-primary-dark flex items-center justify-center font-quicksand"
+  >
+    <div
+      class="container max-w-lg w-full bg-glass shadow-glass rounded-3xl p-8 backdrop-blur-md border border-primary/20"
+    >
+      <h1
+        class="text-5xl font-poppins font-extrabold mb-8 text-primary-dark drop-shadow-glow tracking-tight"
+      >
+        Tic Tac Toe
+      </h1>
+      <div id="board" class="grid grid-cols-3 gap-3 mx-auto my-8">
+        <div
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          data-cell
+        ></div>
+        <div
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          data-cell
+        ></div>
+        <div
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          data-cell
+        ></div>
+        <div
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          data-cell
+        ></div>
+        <div
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          data-cell
+        ></div>
+        <div
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          data-cell
+        ></div>
+        <div
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          data-cell
+        ></div>
+        <div
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          data-cell
+        ></div>
+        <div
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          data-cell
+        ></div>
       </div>
-      <div id="status"></div>
-      <button id="restartButton">Restart Game</button>
+      <div
+        id="status"
+        class="text-2xl font-poppins my-4 text-primary-dark min-h-[2.5rem] drop-shadow-glow"
+      ></div>
+      <button
+        id="restartButton"
+        class="mt-4 bg-accent hover:bg-accent-dark text-white font-quicksand py-3 px-8 rounded-2xl shadow-glass text-lg font-bold transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-accent/40"
+      >
+        Restart Game
+      </button>
     </div>
     <script src="script.js"></script>
   </body>

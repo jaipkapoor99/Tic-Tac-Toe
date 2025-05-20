@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .cell {
+    @apply transition-all duration-200;
+  }
+
+  #board {
+    @apply grid grid-cols-3 gap-1 mx-auto my-8;
+  }
+
+  .container {
+    @apply max-w-lg mx-auto px-4 py-8 text-center;
+  }
+
+  h1 {
+    @apply text-4xl font-poppins font-bold mb-8 text-gray-800;
+  }
+
+  #status {
+    @apply text-xl font-quicksand my-4 text-gray-700;
+  }
+
+  #restartButton {
+    @apply bg-blue-500 text-white font-quicksand py-2 px-6 rounded-lg hover:bg-blue-600 transition-colors;
+  }
+}
