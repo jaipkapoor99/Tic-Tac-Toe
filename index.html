@@ -13,51 +13,51 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body
-    class="min-h-screen bg-gradient-radial from-primary-light via-surface to-primary-dark flex items-center justify-center font-quicksand"
+    class="min-h-screen bg-gradient-radial from-primary-light via-accent-light to-primary-dark flex items-center justify-center font-quicksand"
   >
     <div
       class="container max-w-lg w-full bg-glass shadow-glass rounded-3xl p-8 backdrop-blur-md border border-primary/20"
     >
       <h1
-        class="text-5xl font-poppins font-extrabold mb-8 text-primary-dark drop-shadow-glow tracking-tight"
+        class="text-5xl font-poppins font-extrabold mb-8 text-accent drop-shadow-glow tracking-tight"
       >
         Tic Tac Toe
       </h1>
       <div id="board" class="grid grid-cols-3 gap-3 mx-auto my-8">
         <div
-          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-primary-light text-primary-dark rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-accent hover:text-white hover:scale-105"
           data-cell
         ></div>
         <div
-          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-accent-light text-accent-dark rounded-xl shadow-glass border-2 border-accent/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary hover:text-white hover:scale-105"
           data-cell
         ></div>
         <div
-          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-pink-100 text-pink-700 rounded-xl shadow-glass border-2 border-pink-300 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-pink-400 hover:text-white hover:scale-105"
           data-cell
         ></div>
         <div
-          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-green-100 text-green-700 rounded-xl shadow-glass border-2 border-green-300 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-green-400 hover:text-white hover:scale-105"
           data-cell
         ></div>
         <div
-          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-yellow-100 text-yellow-700 rounded-xl shadow-glass border-2 border-yellow-300 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-yellow-400 hover:text-white hover:scale-105"
           data-cell
         ></div>
         <div
-          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-blue-100 text-blue-700 rounded-xl shadow-glass border-2 border-blue-300 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-blue-400 hover:text-white hover:scale-105"
           data-cell
         ></div>
         <div
-          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-purple-100 text-purple-700 rounded-xl shadow-glass border-2 border-purple-300 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-purple-400 hover:text-white hover:scale-105"
           data-cell
         ></div>
         <div
-          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-orange-100 text-orange-700 rounded-xl shadow-glass border-2 border-orange-300 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-orange-400 hover:text-white hover:scale-105"
           data-cell
         ></div>
         <div
-          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-white/80 rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-primary-light hover:scale-105"
+          class="cell min-h-[5.5rem] min-w-[5.5rem] bg-red-100 text-red-700 rounded-xl shadow-glass border-2 border-red-300 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-red-400 hover:text-white hover:scale-105"
           data-cell
         ></div>
       </div>
@@ -67,7 +67,7 @@
       ></div>
       <button
         id="restartButton"
-        class="mt-4 bg-accent hover:bg-accent-dark text-white font-quicksand py-3 px-8 rounded-2xl shadow-glass text-lg font-bold transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-accent/40"
+        class="mt-4 bg-gradient-to-r from-primary via-accent to-pink-500 hover:from-accent-dark hover:to-primary-dark text-white font-quicksand py-3 px-8 rounded-2xl shadow-glass text-lg font-bold transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-accent/40"
       >
         Restart Game
       </button>
