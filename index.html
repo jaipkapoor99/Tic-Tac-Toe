@@ -1,29 +1,54 @@
+<!--
+  Tic Tac Toe Game - Main HTML Structure
+
+  This file defines the basic layout and elements for the Tic Tac Toe game.
+  It includes:
+  - Metadata (charset, viewport, title)
+  - Links to Google Fonts (Quicksand, Poppins)
+  - Link to the compiled stylesheet (style.css)
+  - The main game container, board, cells, status display, and restart button
+  - Link to the game logic script (script.js)
+
+  Styling is primarily handled by Tailwind CSS utility classes defined in `input.css`
+  and compiled into `style.css`.
+
+  @version 1.2.0
+  @date May 21, 2025
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic Tac Toe</title>
+    <title>Tic Tac Toe - Modern & Colorful</title>
+    <!-- Google Fonts: Quicksand for general text, Poppins for headings -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Poppins:wght@600;800&display=swap"
       rel="stylesheet"
     />
+    <!-- Link to the compiled Tailwind CSS stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
+  <!-- Body with a radial gradient background and centered content -->
   <body
     class="min-h-screen bg-gradient-radial from-primary-light via-accent-light to-primary-dark flex items-center justify-center font-quicksand"
   >
+    <!-- Main game container with glassmorphism effect -->
     <div
       class="container max-w-lg w-full bg-glass shadow-glass rounded-3xl p-8 backdrop-blur-md border border-primary/20"
     >
+      <!-- Game Title -->
       <h1
-        class="text-5xl font-poppins font-extrabold mb-8 text-accent drop-shadow-glow tracking-tight"
+        class="text-5xl font-poppins font-extrabold mb-8 text-accent drop-shadow-glow tracking-tight text-center"
       >
         Tic Tac Toe
       </h1>
+      <!-- Game Board: 3x3 grid -->
       <div id="board" class="grid grid-cols-3 gap-3 mx-auto my-8">
+        <!-- Individual cells, styled with Tailwind CSS utility classes -->
+        <!-- `data-cell` attribute is used by JavaScript to identify game cells -->
         <div
           class="cell min-h-[5.5rem] min-w-[5.5rem] bg-primary-light text-primary-dark rounded-xl shadow-glass border-2 border-primary/30 flex items-center justify-center text-6xl font-bold cursor-pointer transition-all duration-200 hover:bg-accent hover:text-white hover:scale-105"
           data-cell
@@ -61,17 +86,20 @@
           data-cell
         ></div>
       </div>
+      <!-- Status display for game messages (e.g., player turn, win/draw) -->
       <div
         id="status"
-        class="text-2xl font-poppins my-4 text-primary-dark min-h-[2.5rem] drop-shadow-glow"
+        class="text-2xl font-poppins my-4 text-primary-dark min-h-[2.5rem] drop-shadow-glow text-center"
       ></div>
+      <!-- Restart button with gradient background -->
       <button
         id="restartButton"
-        class="mt-4 bg-gradient-to-r from-primary via-accent to-pink-500 hover:from-accent-dark hover:to-primary-dark text-white font-quicksand py-3 px-8 rounded-2xl shadow-glass text-lg font-bold transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-accent/40"
+        class="block mx-auto mt-4 bg-gradient-to-r from-primary via-accent to-pink-500 hover:from-accent-dark hover:to-primary-dark text-white font-quicksand py-3 px-8 rounded-2xl shadow-glass text-lg font-bold transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-accent/40"
       >
         Restart Game
       </button>
     </div>
+    <!-- Link to the JavaScript file containing game logic -->
     <script src="script.js"></script>
   </body>
 </html>
