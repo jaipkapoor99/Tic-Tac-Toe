@@ -1,172 +1,123 @@
-# Modern Tic-Tac-Toe: A Revitalized Classic
+# Modern Tic-Tac-Toe: React & TypeScript Edition 🚀
 
-This project presents a completely modernized version of the classic Tic-Tac-Toe game. Originally a basic implementation, it has been transformed with a sleek, contemporary user interface and experience, leveraging Tailwind CSS for styling and a robust development setup. The codebase has been thoroughly documented to ensure clarity and maintainability.
+This project is a complete rewrite and modernization of a classic Tic-Tac-Toe game, built with **React, TypeScript, Vite, Tailwind CSS, and Shadcn/ui**. It showcases a professional-grade frontend setup with a focus on type safety, modern UI/UX, and a well-structured, maintainable codebase. This project was developed with the assistance of AI.
 
-## Quick Start
+## ✨ Features
 
-1. Clone the repository:
+- 🎮 **Interactive Gameplay:** Classic Tic-Tac-Toe logic for two players.
+- ⚛️ **React & TypeScript:** Robust and type-safe component-based architecture.
+- ⚡ **Vite Powered:** Blazing fast development server and build process.
+- 🎨 **Shadcn/ui & Tailwind CSS:** Beautifully styled, customizable UI components with a modern aesthetic. Includes a custom theme with unique fonts, colors, shadows, and gradients.
+- 📱 **Responsive Design:** Adapts seamlessly to various screen sizes.
+- 🏆 **Win/Draw Detection:** Clear indication of game outcomes.
+- 🔄 **Restart Functionality:** Easily start a new game.
+- 🧩 **Modular Codebase:** Logic encapsulated in a custom React Hook (`useTicTacToe`) for better separation of concerns.
+- 📚 **Comprehensive Setup:** Includes detailed configuration for TypeScript, Tailwind CSS, and Vite.
 
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/Tic-Tac-Toe.git
-   cd Tic-Tac-Toe
-   ```
+## 🛠️ Tech Stack
 
-2. Install dependencies:
+- **Core:** React 18, TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS (with JIT compilation), PostCSS, Autoprefixer
+- **UI Components:** Shadcn/ui
+- **Fonts:** Google Fonts (Poppins, Quicksand - customized via Tailwind)
+- **Development:** Node.js, npm
 
-   ```bash
-   npm install
-   ```
+## 🚀 Quick Start
 
-3. Start the development server:
+1.  **Clone the repository:**
 
-   ```bash
-   npm run build
-   ```
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/Tic-Tac-Toe.git # Replace YOUR_USERNAME
+    cd Tic-Tac-Toe
+    ```
 
-4. Open `index.html` in your browser
+2.  **Install dependencies:**
 
-## Features
-
-- 🎮 **Clean & Modern UI/UX:** Completely redesigned for a fresh, intuitive, and visually appealing experience.
-- 🎨 **Custom Tailwind CSS Theme:** Utilizes a highly customized Tailwind CSS setup with unique fonts (`Poppins`, `Quicksand`), a bespoke color palette, glassmorphism effects, and gradient backgrounds.
-- ✨ **Glassmorphism & Gradients:** Stylish glass-like elements and smooth gradients enhance the visual depth.
-- 📱 **Responsive Design:** Adapts seamlessly to various screen sizes and orientations.
-- 🔄 Game state management
-- 👥 Two-player gameplay
-- 🏆 Win detection
-- 🤝 Draw detection
-- 🔄 Restart functionality
-- 📚 **Comprehensive Code Documentation:** Extensive JSDoc comments in JavaScript and configuration files, along with detailed HTML comments.
-- 🤖 AI assistance powered by GitHub Copilot during development.
-
-## Technologies Used
-
-- HTML5
-- Tailwind CSS v3.4.3 (with custom theme, JIT compilation)
-- JavaScript (ES6+)
-- Google Fonts (Poppins for headers/UI, Quicksand for game text)
-- PostCSS & Autoprefixer (v8.4.38 & v10.4.16 respectively)
-- Node.js & npm for development
-- GitHub Copilot for enhanced development
-
-## Development Setup
-
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm (v6 or higher)
-
-### Project Structure
-
-```
-tic-tac-toe/
-├── node_modules/       # Project dependencies (gitignored)
-├── .gitignore          # Specifies intentionally untracked files
-├── index.html          # Main HTML structure for the game
-├── input.css           # Source CSS file with Tailwind directives
-├── style.css           # Compiled Tailwind CSS output
-├── script.js           # Core game logic and interactivity
-├── tailwind.config.js  # Tailwind CSS theme and customization
-├── postcss.config.js   # PostCSS plugin configuration
-├── package.json        # Project metadata, dependencies, and scripts
-└── README.md           # This file
-```
-
-### Available Scripts
-
-- `npm run build` - Starts Tailwind CSS compiler in watch mode
-
-## Game Rules
-
-1. The game is played on a 3x3 grid
-2. Players take turns placing X or O in empty cells
-3. First player to get 3 in a row (horizontally, vertically, or diagonally) wins
-4. If all cells are filled with no winner, the game is a draw
-
-## Code Structure
-
-- `index.html`: Defines the semantic structure and layout of the game board and UI elements.
-- `input.css` & `tailwind.config.js`: Manages the styling. `input.css` includes Tailwind's base, components, and utilities, while `tailwind.config.js` defines the custom theme (colors, fonts, gradients, shadows, etc.).
-- `style.css`: The generated CSS file applied to the game, compiled from `input.css` and `tailwind.config.js`.
-- `script.js`: Contains all JavaScript logic for game mechanics, player turns, win/draw detection, UI updates, and event handling. Thoroughly documented with JSDoc.
-- `postcss.config.js`: Configures PostCSS plugins like Tailwind CSS and Autoprefixer.
-- `package.json`: Lists project dependencies (Tailwind CSS, PostCSS, Autoprefixer) and defines the build script.
-
-## Features Implemented
-
-### CSS (via Tailwind CSS)
-
-- Modern gradient backgrounds and UI elements.
-- Glassmorphism effects on the game board and controls.
-- Custom font integration (Poppins, Quicksand).
-- Player-specific colors for X and O marks.
-- Responsive design ensuring playability on all devices.
-- Smooth hover effects and transitions.
-
-### JavaScript
-
-- ES6+ features
-- Modern array methods
-- Event handling
-- State management
-- Win/Draw detection
-
-## Local Development
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start Tailwind CSS compiler:
-   ```bash
-   npm run build
-   ```
-4. Open `index.html` in your browser
-5. Make changes to `input.css` for styling
-6. The compiler will automatically rebuild when you make changes
-
-## Building for Production
-
-To create a minified version of the CSS for deployment:
-
-1.  Ensure all dependencies are installed:
     ```bash
     npm install
     ```
-2.  Run the production build command:
+
+3.  **Start the development server:**
+
     ```bash
-    npx tailwindcss -i ./input.css -o ./style.css --minify
+    npm run dev
     ```
-3.  Deploy the following files:
-    - `index.html`
-    - `style.css` (now minified)
-    - `script.js`
 
-## Screenshots
+    This will typically open the app in your browser at `http://localhost:5173`.
 
-_(Placeholder: Add screenshots of the new UI here to showcase the modern design, game board, win/draw states, etc.)_
+4.  **Build for production:**
 
-## Future Enhancements
+    ```bash
+    npm run build
+    ```
 
-- Add score tracking
-- Implement AI opponent
-- Add sound effects
-- Add game history
-- Add multiplayer support
+    The production-ready files will be in the `dist/` directory.
 
-## Contributing
+5.  **Preview production build:**
+    ```bash
+    npm run preview
+    ```
 
-Contributions are welcome! If you have suggestions or want to improve the game, please feel free to:
+## 📁 Project Structure
 
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
+```
+tic-tac-toe/
+├── dist/                   # Production build output (gitignored)
+├── node_modules/           # Project dependencies (gitignored)
+├── public/                 # Static assets (e.g., favicon)
+├── src/
+│   ├── components/
+│   │   ├── ui/             # Shadcn/ui components (e.g., button.tsx)
+│   │   ├── Board.tsx       # Renders the game board
+│   │   ├── Cell.tsx        # Renders a single cell
+│   │   └── Game.tsx        # Main game UI, uses useTicTacToe hook
+│   ├── hooks/
+│   │   └── useTicTacToe.ts # Custom hook with all game logic
+│   ├── lib/
+│   │   └── utils.ts        # Utility functions (e.g., cn for classnames)
+│   ├── App.css             # App-specific global styles (minimal)
+│   ├── App.tsx             # Root React component
+│   ├── index.css           # Tailwind directives & base styles (Shadcn/ui theme vars)
+│   └── main.tsx            # Application entry point
+├── .gitignore
+├── components.json         # Shadcn/ui configuration
+├── index.html              # Main HTML entry for Vite
+├── package.json            # Project metadata, dependencies, and scripts
+├── postcss.config.ts       # PostCSS configuration (ESM)
+├── README.md               # This file
+├── tailwind.config.ts      # Tailwind CSS theme and customization (ESM)
+├── tsconfig.json           # Main TypeScript configuration for the project
+├── tsconfig.node.json      # TypeScript configuration for Node.js based files (e.g., vite.config.ts)
+└── vite.config.ts          # Vite configuration (ESM)
+```
 
-## License
+## 📜 Available Scripts (from `package.json`)
 
-_(Placeholder: Add license information here, e.g., MIT License.)_
+- `npm run dev`: Starts the Vite development server.
+- `npm run build`: Compiles TypeScript and builds the application for production using Vite.
+- `npm run lint`: Lints the project using ESLint (if configured - current setup focuses on TS).
+- `npm run preview`: Serves the production build locally for preview.
 
-_(Consider adding a "Acknowledgements" section if you used any third-party assets or got inspiration from specific sources.)_
+## 룰 Game Rules
+
+1.  The game is played on a 3x3 grid.
+2.  Players (X and O) take turns placing their mark in an empty cell.
+3.  The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins.
+4.  If all nine cells are filled and no player has won, the game is a draw.
+
+## 🎨 Customization & Styling
+
+- **Tailwind CSS:** Theme customizations (colors, fonts, shadows, gradients, animations) are defined in `tailwind.config.ts`.
+- **Shadcn/ui:** Base color theming (light/dark mode) is primarily managed through CSS variables in `src/index.css` and configured in `tailwind.config.ts` and `components.json`. New components can be added via the Shadcn/ui CLI (`npx shadcn@latest add <component>`).
+
+## 💡 Key Code Structure Insights
+
+- **`src/hooks/useTicTacToe.ts`**: This custom hook encapsulates all the game's state (board, current player, winner, etc.) and logic (handling clicks, checking for wins/draws, resetting the game). This promotes separation of concerns and makes the `Game.tsx` component cleaner.
+- **`src/components/Game.tsx`**: Uses the `useTicTacToe` hook and is responsible for rendering the game's UI, including the status display, the `Board` component, and the restart `Button`.
+- **`src/components/Board.tsx`**: A presentational component that maps over the `board` state (from the hook) to render individual `Cell` components. It also handles highlighting the winning line.
+- **`src/components/Cell.tsx`**: Renders a single clickable cell, displaying 'X', 'O', or nothing. It also visually indicates if it's part of a winning line.
+- **Type Safety:** TypeScript is used throughout the project to ensure robust type checking, reducing runtime errors and improving developer experience.
+- **Path Aliases:** `@/*` is configured in `tsconfig.json` and `vite.config.ts` to allow for cleaner import paths (e.g., `import { Button } from "@/components/ui/button";`).
+
+This project serves as a strong example of building a modern, interactive web application with best practices in React and TypeScript development.
