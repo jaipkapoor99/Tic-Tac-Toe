@@ -1,4 +1,3 @@
-import React from "react";
 import Game from "@/components/Game"; // Ensure this path is correct based on your alias setup
 import "./App.css"; // If you have App-specific styles
 
