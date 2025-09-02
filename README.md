@@ -26,29 +26,29 @@ developed with the assistance of AI and is ready for deployment on Vercel.
 
 ## 🛠️ Tech Stack
 
--   **Core:** React 18, TypeScript
--   **Build Tool:** Vite
--   **Styling:** Tailwind CSS (with JIT compilation), PostCSS, Autoprefixer
--   **UI Components:** Shadcn/ui
--   **Fonts:** Google Fonts (Poppins, Quicksand - customized via Tailwind)
--   **Development:** Node.js, npm
+- **Core:** React 18, TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS (with JIT compilation), PostCSS, Autoprefixer
+- **UI Components:** Shadcn/ui
+- **Fonts:** Google Fonts (Poppins, Quicksand - customized via Tailwind)
+- **Development:** Node.js, npm
 
 ## 🚀 Quick Start
 
-1.  **Clone the repository:**
+1. **Clone the repository:**
 
     ```bash
     git clone https://github.com/jaipkapoor99/Tic-Tac-Toe.git
     cd Tic-Tac-Toe
     ```
 
-2.  **Install dependencies:**
+2. **Install dependencies:**
 
     ```bash
     npm install
     ```
 
-3.  **Start the development server:**
+3. **Start the development server:**
 
     ```bash
     npm run dev
@@ -56,7 +56,7 @@ developed with the assistance of AI and is ready for deployment on Vercel.
 
     This will typically open the app in your browser at `http://localhost:5173`.
 
-4.  **Build for production:**
+4. **Build for production:**
 
     ```bash
     npm run build
@@ -64,7 +64,7 @@ developed with the assistance of AI and is ready for deployment on Vercel.
 
     The production-ready files will be in the `dist/` directory.
 
-5.  **Preview production build:**
+5. **Preview production build:**
 
     ```bash
     npm run preview
@@ -72,7 +72,7 @@ developed with the assistance of AI and is ready for deployment on Vercel.
 
 ## 📁 Project Structure
 
-```
+```txt
 tic-tac-toe/
 ├── dist/                   # Production build output (gitignored)
 ├── node_modules/           # Project dependencies (gitignored)
@@ -103,47 +103,47 @@ tic-tac-toe/
 
 ## 📜 Available Scripts
 
--   `npm run dev`: Starts the Vite development server.
--   `npm run build`: Compiles TypeScript and builds the application for
+- `npm run dev`: Starts the Vite development server.
+- `npm run build`: Compiles TypeScript and builds the application for
     production using Vite.
--   `npm run lint`: Lints the project using ESLint.
--   `npm run preview`: Serves the production build locally for preview.
+- `npm run lint`: Lints the project using ESLint.
+- `npm run preview`: Serves the production build locally for preview.
 
 ## 룰 Game Rules
 
-1.  The game is played on a 3x3 grid.
-2.  Players (X and O) take turns placing their mark in an empty cell.
-3.  The first player to get three of their marks in a row (horizontally,
+1. The game is played on a 3x3 grid.
+2. Players (X and O) take turns placing their mark in an empty cell.
+3. The first player to get three of their marks in a row (horizontally,
     vertically, or diagonally) wins.
-4.  If all nine cells are filled and no player has won, the game is a draw.
+4. If all nine cells are filled and no player has won, the game is a draw.
 
 ## 🎨 Customization & Styling
 
--   **Tailwind CSS:** Theme customizations (colors, fonts, shadows, gradients,
+- **Tailwind CSS:** Theme customizations (colors, fonts, shadows, gradients,
     animations) are defined in `tailwind.config.ts`.
--   **Shadcn/ui:** Base color theming (light/dark mode) is primarily managed
+- **Shadcn/ui:** Base color theming (light/dark mode) is primarily managed
     through CSS variables in `src/index.css` and configured in
     `tailwind.config.ts` and `components.json`. New components can be added via
     the Shadcn/ui CLI (`npx shadcn@latest add <component>`).
 
 ## 💡 Key Code Structure Insights
 
--   **`src/hooks/useTicTacToe.ts`**: This custom hook encapsulates all the
+- **`src/hooks/useTicTacToe.ts`**: This custom hook encapsulates all the
     game's state (board, current player, winner, etc.) and logic (handling
     clicks, checking for wins/draws, resetting the game). This promotes
     separation of concerns and makes the `Game.tsx` component cleaner.
--   **`src/components/Game.tsx`**: Uses the `useTicTacToe` hook and is
+- **`src/components/Game.tsx`**: Uses the `useTicTacToe` hook and is
     responsible for rendering the game's UI, including the status display, the
     `Board` component, and the restart `Button`.
--   **`src/components/Board.tsx`**: A presentational component that maps over
+- **`src/components/Board.tsx`**: A presentational component that maps over
     the `board` state (from the hook) to render individual `Cell` components. It
     also handles highlighting the winning line.
--   **`src/components/Cell.tsx`**: Renders a single clickable cell, displaying
+- **`src/components/Cell.tsx`**: Renders a single clickable cell, displaying
     'X', 'O', or nothing. It also visually indicates if it's part of a winning
     line.
--   **Type Safety:** TypeScript is used throughout the project to ensure robust
+- **Type Safety:** TypeScript is used throughout the project to ensure robust
     type checking, reducing runtime errors and improving developer experience.
--   **Path Aliases:** `@/*` is configured in `tsconfig.json` and
+- **Path Aliases:** `@/*` is configured in `tsconfig.json` and
     `vite.config.ts` to allow for cleaner import paths (e.g.,
     `import { Button } from "@/components/ui/button";`).
 
