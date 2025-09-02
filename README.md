@@ -90,20 +90,20 @@ This project is a complete rewrite and modernization of a classic Tic-Tac-Toe ga
 
 ## 🚀 Quick Start
 
-1.  **Clone the repository:**
+1. **Clone the repository:**
 
     ```bash
     git clone https://github.com/jaipkapoor99/Tic-Tac-Toe.git
     cd Tic-Tac-Toe
     ```
 
-2.  **Install dependencies:**
+2. **Install dependencies:**
 
     ```bash
     npm install
     ```
 
-3.  **Start the development server:**
+3. **Start the development server:**
 
     ```bash
     npm run dev
@@ -111,7 +111,7 @@ This project is a complete rewrite and modernization of a classic Tic-Tac-Toe ga
 
     This will typically open the app in your browser at `http://localhost:5173`.
 
-4.  **Build for production:**
+4. **Build for production:**
 
     ```bash
     npm run build
@@ -119,7 +119,8 @@ This project is a complete rewrite and modernization of a classic Tic-Tac-Toe ga
 
     The production-ready files will be in the `dist/` directory.
 
-5.  **Preview production build:**
+5. **Preview production build:**
+
     ```bash
     npm run preview
     ```
@@ -164,10 +165,10 @@ tic-tac-toe/
 
 ## 룰 Game Rules
 
-1.  The game is played on a 3x3 grid.
-2.  Players (X and O) take turns placing their mark in an empty cell.
-3.  The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins.
-4.  If all nine cells are filled and no player has won, the game is a draw.
+1. The game is played on a 3x3 grid.
+2. Players (X and O) take turns placing their mark in an empty cell.
+3. The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins.
+4. If all nine cells are filled and no player has won, the game is a draw.
 
 ## 🎨 Customization & Styling
 
@@ -184,7 +185,6 @@ tic-tac-toe/
 - **Path Aliases:** `@/*` is configured in `tsconfig.json` and `vite.config.ts` to allow for cleaner import paths (e.g., `import { Button } from "@/components/ui/button";`).
 
 This project serves as a strong example of building a modern, interactive web application with best practices in React and TypeScript development.
-
 
 ## 📜 Available Scripts (from `package.json`)
 
