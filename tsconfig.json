@@ -27,13 +27,14 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "src",
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "exclude": [
+    "node_modules",
+    "dist",
     "vite.config.ts",
     "tailwind.config.ts",
-    "postcss.config.ts",
+    "postcss.config.cjs",
     ".eslintrc.cjs"
-  ], // Added .eslintrc.cjs if you have one
-  "references": [{ "path": "./tsconfig.node.json" }],
-  "exclude": ["node_modules", "dist"]
+  ]
 }

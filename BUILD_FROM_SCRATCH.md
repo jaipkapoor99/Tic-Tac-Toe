@@ -35,7 +35,7 @@ This document outlines the steps to build the modern Tic-Tac-Toe application usi
     npx tailwindcss init -p
     ```
 
-    This will create `tailwind.config.ts` (or `.js`) and `postcss.config.cjs` (or `.js`). Note that `postcss.config.ts` might need to be renamed to `postcss.config.cjs` and its content adjusted to use `module.exports` if you encounter ESM-related issues with PostCSS plugins or `ts-node`.
+    This will create `tailwind.config.ts` (or `.js`) and `postcss.config.cjs`.
 
 3.  Configure Tailwind's template paths in `tailwind.config.ts`:
 
